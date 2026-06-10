@@ -38,14 +38,14 @@ nav a {
     font-weight: 400;
 }
 
+nav a:hover {
+    background-color: #7851f7;
+}
+
 /* Active Navigation Link */
 nav .active a {
     background-color: #7851f7;
     font-weight: 700;
-}
-
-nav a:hover {
-    background-color: #7851f7;
 }
 
 /* Main Content */
