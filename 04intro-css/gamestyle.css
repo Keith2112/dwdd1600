@@ -42,6 +42,12 @@ nav a:hover {
     background-color: #7851f7;
 }
 
+/* Active Navigation Link */
+nav .active a {
+    background-color: #7851f7;
+    font-weight: 700;
+}
+
 /* Main Content */
 main {
     padding: 1rem 10px;
