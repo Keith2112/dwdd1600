@@ -1,0 +1,113 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #f3f4f6;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #1e2747;
+    color: white;
+    padding: 1rem 10px;
+}
+
+header span {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Navigation */
+nav {
+    background-color: #4285f4;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .9rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+nav a:hover {
+    background-color: #7851f7;
+}
+
+/* Active Navigation Link */
+nav .active a {
+    background-color: #7851f7;
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    padding: 1rem 10px;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    color: #1e2747;
+}
+
+h2 {
+    color: #4285f4;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+dl dt {
+    font-weight: 700;
+    color: #1e2747;
+    margin-top: .5rem;
+}
+
+dl dd {
+    margin-left: 20px;
+}
+
+/* Contact Box */
+address {
+    background-color: #d9d9d9;
+    padding: .5rem;
+    border: 1px solid #1e2747;
+    border-radius: 8px;
+    width: 220px;
+}
+
+/* Links */
+main a {
+    color: #4285f4;
+}
+
+main a:hover {
+    color: #7851f7;
+}
+
+/* Footer */
+footer {
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+}
