@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-weight: 200;
+    color: #555;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 0 0.7rem 1.5rem;
+}
+
+.site-name {
+    display: block;
+    font-size: 2.1rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #9c3335;
+}
+
+.tagline {
+    display: block;
+    margin-top: 0.2rem;
+    color: #777;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+}
+
+nav {
+    background-color: #001821;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1.3rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #9c3335;
+    color: white;
+}
+
+main {
+    padding: 1.5rem;
+    min-height: 500px;
+}
+
+h1 {
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #9c3335;
+}
+
+h2 {
+    margin: 1rem 0 0.35rem 0;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #9c3335;
+}
+
+p {
+    max-width: 520px;
+    line-height: 1.35;
+}
+
+.hero-photo {
+    float: right;
+    width: 48%;
+    margin: 0.4rem 1rem 1rem 2rem;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.myForm fieldset {
+    border: 1px solid #9c3335;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #9c3335;
+    font-size: 0.8rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm textarea {
+    display: block;
+    margin: 0.5rem;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm select,
+.myForm textarea {
+    border: solid 1px #888;
+    padding: 0.3rem;
+    width: 250px;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm input[type="submit"] {
+    background-color: #9c3335;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    font-weight: 500;
+}
+
+footer {
+    clear: both;
+    background-color: #9c3335;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+footer p {
+    max-width: none;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+footer a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
