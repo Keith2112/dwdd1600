@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Keith Mecham">
+    <meta name="description" content="A video game survey for visitors to share their gaming interests.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gamestyle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Video Games Through Time | Survey</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/game-logo.png" alt="Video Games Through Time logo" width="88" height="88">
+        <div>
+            <span>Video Games Through Time</span>
+            <p><em>Share what kind of gaming history interests you most.</em></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="earlygames.html">Early Games</a></li>
+            <li><a href="consoles.html">Early Consoles</a></li>
+            <li class="active"><a href="survey.html">Survey</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Gaming Survey</h1>
+        <p>Tell us a little about your gaming interests so this site can focus on the kinds of video game history people want to learn about.</p>
+
+        <form method="get" action="thanks.html" class="gameForm">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>Full Name*
+                    <input type="text" name="fullName" required>
+                </label>
+                <label>Email*
+                    <input type="email" name="email" placeholder="name@example.com" required>
+                </label>
+                <label>Phone Number*
+                    <input type="tel" name="phone" placeholder="555-555-5555" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gaming Background</legend>
+                <p class="formQuestion">What type of gaming do you play the most?</p>
+                <label><input type="radio" name="gamingType" value="console"> Console gaming</label>
+                <label><input type="radio" name="gamingType" value="pc"> PC gaming</label>
+                <label><input type="radio" name="gamingType" value="mobile"> Mobile gaming</label>
+                <label><input type="radio" name="gamingType" value="retro"> Retro gaming</label>
+
+                <label>Favorite gaming era
+                    <select name="era">
+                        <option value="none">Please Select</option>
+                        <option value="arcade">Arcade era</option>
+                        <option value="eight-bit">8-bit and 16-bit era</option>
+                        <option value="disc">Disc based console era</option>
+                        <option value="modern">Modern online gaming era</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Site Interests</legend>
+                <p class="formQuestion">What topics would you like added to the site?</p>
+                <label><input type="checkbox" name="arcadeGames" value="yes"> Arcade games</label>
+                <label><input type="checkbox" name="consoleHistory" value="yes"> Console history</label>
+                <label><input type="checkbox" name="gameCharacters" value="yes"> Famous game characters</label>
+                <label><input type="checkbox" name="modernGames" value="yes"> Modern games</label>
+
+                <label>Comments
+                    <textarea name="comments" placeholder="What should this site cover next?"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Gaming Survey">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Keith Mecham | <a href="mailto:keithrushmecham@gmail.com">Email Us</a></p>
+    </footer>
+
+</body>
+
+</html>

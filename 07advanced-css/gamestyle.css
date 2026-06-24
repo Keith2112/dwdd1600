@@ -1,0 +1,302 @@
+/* Unit 07 Advanced CSS */
+
+/* Box Model */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #f3f4f6;
+    color: #222;
+}
+
+/* Width Control and Center Page Contents */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+/* Header and Logo */
+header {
+    background-image: linear-gradient(135deg, #1e2747, #4285f4);
+    color: white;
+    padding: 1rem 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 88px;
+    height: 88px;
+    flex: 0 0 auto;
+}
+
+header span {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header p {
+    margin: .3rem 0 0 0;
+}
+
+/* Small Screen Navigation */
+nav {
+    background-color: #4285f4;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .9rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+nav a:hover {
+    background-color: #7851f7;
+}
+
+/* Active Navigation Link */
+nav .active a {
+    background-image: linear-gradient(to bottom, #7851f7, #4b2bb8);
+    color: white;
+}
+
+/* Tablet and Desktop Navigation */
+@media only screen and (min-width: 801px) {
+    nav ul {
+        display: flex;
+        padding: 0 10px;
+    }
+
+    nav a {
+        border-bottom: solid 3px transparent;
+        background-image: none;
+    }
+
+    nav .active a {
+        background-image: none;
+        background-color: transparent;
+        border-bottom: solid 3px #ffffff;
+    }
+}
+
+/* Main Content */
+main {
+    padding: 1rem 10px;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    color: #1e2747;
+}
+
+h2 {
+    color: #4285f4;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/* Hero Image */
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #1e2747;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+dl dt {
+    font-weight: 700;
+    color: #1e2747;
+    margin-top: .5rem;
+}
+
+dl dd {
+    margin-left: 20px;
+}
+
+/* Contact Box */
+address {
+    background-color: #d9d9d9;
+    padding: .5rem;
+    border: 1px solid #1e2747;
+    border-radius: 8px;
+    width: 220px;
+}
+
+/* Links */
+main a {
+    color: #4285f4;
+}
+
+main a:hover {
+    color: #7851f7;
+}
+
+/* Console gallery */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div.gallery figure {
+    width: 300px;
+    margin: 0;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #1e2747;
+    border-radius: 8px;
+}
+
+div.gallery img:hover {
+    box-shadow: 0 0 14px rgba(0, 0, 0, .45);
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .85rem;
+    margin-top: .25rem;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+footer p {
+    max-width: none;
+    margin: 0;
+}
+
+footer a {
+    color: #1e2747;
+}
+
+/* Gaming Survey Form */
+.gameForm {
+    max-width: 760px;
+}
+
+.gameForm fieldset {
+    border: 2px solid #4285f4;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.gameForm legend {
+    color: #1e2747;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    padding: 0 .5rem;
+}
+
+.gameForm label,
+.gameForm select,
+.gameForm input[type="text"],
+.gameForm input[type="email"],
+.gameForm input[type="tel"],
+.gameForm textarea {
+    display: block;
+    margin: .6rem 0;
+}
+
+.gameForm input[type="text"],
+.gameForm input[type="email"],
+.gameForm input[type="tel"],
+.gameForm select,
+.gameForm textarea {
+    background-color: #eef3ff;
+    color: #222;
+    border: 1px solid #1e2747;
+    border-radius: 8px;
+    padding: .55rem;
+    width: 280px;
+    font-family: "Roboto", sans-serif;
+}
+
+.gameForm textarea {
+    width: 340px;
+    height: 7rem;
+}
+
+.gameForm :required {
+    background-color: #fff3d8;
+}
+
+.formQuestion {
+    margin-bottom: .25rem;
+    font-weight: 700;
+}
+
+.gameForm input[type="submit"],
+.gameForm input[type="reset"] {
+    background-color: #4285f4;
+    color: white;
+    border: 2px solid #1e2747;
+    border-radius: 10px;
+    padding: .9rem 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gameForm input[type="submit"]:hover,
+.gameForm input[type="reset"]:hover {
+    background-color: #7851f7;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        align-items: flex-start;
+    }
+
+    div.gallery {
+        display: block;
+    }
+
+    div.gallery figure {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
