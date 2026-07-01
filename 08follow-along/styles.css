@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+body{margin:0;background:#fff;font-family:'Josefin Sans',Arial,sans-serif;font-weight:300;color:#333;font-size:18px}
+header,nav,main,footer{max-width:1100px;margin:0 auto}
+header{background:#ffd829;display:flex;align-items:center;gap:18px;padding:18px 24px}
+.logo{width:80px;height:80px;border-radius:50%;background:#333;display:grid;place-items:center;color:#fff;font-size:40px;border:6px dotted #ffd829;outline:4px solid #333}
+.site-name{font-size:19px;color:#222}
+nav{background:#333}
+nav ul{list-style:none;margin:0;padding:0;display:flex;justify-content:center}
+nav a{display:block;color:white;text-decoration:none;font-weight:600;font-size:15px;padding:18px 22px;text-transform:uppercase}
+nav a:hover,nav a.active{color:#ffd829}
+main{padding:35px 42px 25px;background:#fff;min-height:720px}
+h1{font-size:36px;font-weight:600;margin:0 0 30px;color:#333}
+h2{font-size:30px;font-weight:300;margin:26px 0 10px;color:#444}
+p{line-height:1.45;margin-top:8px}a{color:#74803b}.hero{width:100%;height:auto;margin:8px 0 22px}.video{width:100%;height:335px;border:0}.map{width:100%;height:360px;border:0}.audio-note{font-size:15px;color:#666}.sponsor-table{width:100%;border-collapse:collapse;margin-top:8px}.sponsor-table th{background:#333;color:white;text-align:left;font-weight:600;padding:.6rem 2%}.sponsor-table td{padding:.45rem 2%;color:#74803b}.sponsor-table tr:nth-child(odd){background:#eee}.sponsor-table tr:hover{background:#ddd}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#f3f3f3;padding:18px;border-left:8px solid #ffd829}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}fieldset{border:2px solid #333;margin-bottom:18px;padding:16px}legend{font-weight:600;color:#333;padding:0 8px}label{display:block;margin:10px 0 4px;font-weight:600}input,select,textarea{width:100%;padding:10px;border:1px solid #aaa;font:inherit}input[type=radio],input[type=checkbox]{width:auto}button{background:#333;color:white;border:0;padding:12px 18px;margin-right:10px;font-weight:600}.inline label{font-weight:300}footer{background:#ffd829;text-align:center;font-size:14px;padding:24px;clear:both}@media(max-width:720px){nav ul{display:block}nav a{text-align:center;border-top:1px solid #555}.form-grid,.cards{grid-template-columns:1fr}main{padding:25px}.video{height:230px}}
